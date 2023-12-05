@@ -12,6 +12,7 @@
   justify-content: flex-end;
   color: v.$white;
   align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 
   @include m.desktop {
     height: 340px;
@@ -20,6 +21,7 @@
   h1 {
     margin: 4rem 0;
     font-size: 6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
     @include m.desktop {
       font-size: 8.5rem;
@@ -38,6 +40,7 @@
   .blur {
     width: 100%;
     backdrop-filter: blur(5px);
+    background-color: rgba($color: #000000, $alpha: 0.3);
     h2 {
       @include m.tablet {
         font-size: 2rem;
@@ -56,14 +59,20 @@ nav {
 
     @include m.tablet {
       font-size: 1.8rem;
-
       &:hover {
-        background-color: darken(v.$dark, 10%);
+        background-color: darken(v.$dark, 5%);
+        cursor: pointer;
       }
     }
   }
 
   .nav-selected {
     background-color: darken(v.$dark, 15%);
+    box-shadow: inset 0px 0px 35px -5px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background-color: darken(v.$dark, 15%);
+      box-shadow: inset 0px 0px 35px -5px rgba(0, 0, 0, 0.4);
+    }
   }
 }

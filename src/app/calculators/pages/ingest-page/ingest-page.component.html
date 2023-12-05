@@ -1,4 +1,33 @@
-<calculators-title
-  [title]="'Agua por Ingerir'"
-  [subtitle]="'Máquina'"
-></calculators-title>
+<form class="form">
+  <calculators-title
+    [title]="'Agua por Ingerir'"
+    [subtitle]="'Máquina'"
+  ></calculators-title>
+
+  <calculators-switch-type
+    [labelLeft]="'Manual'"
+    [labelRight]="'Máquina'"
+    class="switch-box"
+  ></calculators-switch-type>
+
+  <div class="entries-container">
+    <div class="entry">
+      <calculators-entry [entryInfo]="entriesInfo"></calculators-entry>
+    </div>
+    <div class="entry">
+      <calculators-entry [entryInfo]="entriesInfo"></calculators-entry>
+    </div>
+    <div class="entry">
+      <calculators-entry [entryInfo]="entriesInfo"></calculators-entry>
+    </div>
+    <div class="entry">
+      <calculators-entry [entryInfo]="entriesInfo"></calculators-entry>
+    </div>
+  </div>
+
+  <calculators-pair-buttons [typeAdd]="'diálisis'"></calculators-pair-buttons>
+
+  <calculators-form-result
+    [label]="'La ultrafiltración 24 es:'"
+  ></calculators-form-result>
+</form>

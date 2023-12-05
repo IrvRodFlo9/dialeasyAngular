@@ -1,0 +1,6 @@
+@use "variables" as v;
+
+.form {
+  background: linear-gradient(145deg, darken(v.$normal, 25%), #f0f0f0);
+  box-shadow: 35px 35px 70px #c1c1c1, -35px -35px 70px #ffffff;
+}

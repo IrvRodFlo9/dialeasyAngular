@@ -1,0 +1,12 @@
+@use "variables" as v;
+
+.switch-box {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  background: linear-gradient(145deg, v.$green, #f0f0f0);
+  box-shadow: 35px 35px 70px #c1c1c1, -35px -35px 70px #ffffff;
+}

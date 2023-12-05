@@ -1,0 +1,85 @@
+@use "mixins" as m;
+
+.entry-data {
+  padding: 1.5rem 3rem 2rem 3rem;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 1rem;
+  border: none;
+
+  @include m.tablet {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .entry-result {
+    width: 100%;
+    grid-column: span 2;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    p:last-child {
+      font-weight: bold;
+    }
+
+    @include m.tablet {
+      grid-column: span 2;
+      flex-direction: column;
+      text-align: end;
+    }
+  }
+}
+
+.input-container {
+  width: 100%;
+  input,
+  select {
+    width: 100%;
+    margin-top: 0.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 20px -11px rgba(0, 0, 0, 0.75);
+  }
+
+  @include m.tablet {
+    grid-column: span 3;
+  }
+
+  label {
+    font-size: 1.5rem;
+
+    @include m.tablet {
+      font-size: 1.6rem;
+    }
+  }
+
+  input {
+    padding: 1rem;
+  }
+
+  select {
+    padding: 0.75rem;
+  }
+}
+
+.result {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    margin: 0 0 1.2rem 0;
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+}

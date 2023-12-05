@@ -1,4 +1,27 @@
-<calculators-title
-  [title]="'Consumo de Agua'"
-  [subtitle]="'Vía Oral'"
-></calculators-title>
+<form class="form">
+  <calculators-title
+    [title]="'Consumo de Agua'"
+    [subtitle]="'Vía Oral'"
+  ></calculators-title>
+
+  <div class="entries-container">
+    <div class="entry">
+      <calculators-entry [entryInfo]="entriesInfo"></calculators-entry>
+    </div>
+    <div class="entry">
+      <calculators-entry [entryInfo]="entriesInfo"></calculators-entry>
+    </div>
+    <div class="entry">
+      <calculators-entry [entryInfo]="entriesInfo"></calculators-entry>
+    </div>
+    <div class="entry">
+      <calculators-entry [entryInfo]="entriesInfo"></calculators-entry>
+    </div>
+  </div>
+
+  <calculators-pair-buttons [typeAdd]="'diálisis'"></calculators-pair-buttons>
+
+  <calculators-form-result
+    [label]="'El total de agua es:'"
+  ></calculators-form-result>
+</form>

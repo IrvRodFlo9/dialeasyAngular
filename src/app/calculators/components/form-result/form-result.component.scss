@@ -1,0 +1,24 @@
+@use "mixins" as m;
+
+.result {
+  margin-top: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @include m.tablet {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: baseline;
+  }
+
+  h4 {
+    margin: 0 0 1.2rem 0;
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+}
