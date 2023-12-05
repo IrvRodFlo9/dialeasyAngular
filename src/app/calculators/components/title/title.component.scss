@@ -1,0 +1,22 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+    color: v.$dDark;
+  }
+
+  @include m.tablet {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: baseline;
+  }
+}
